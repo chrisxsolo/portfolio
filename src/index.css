@@ -8,7 +8,7 @@ body,
 .content { 
   height: 100%;
   width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ h1 {
   font-size: 48px; /* Adjust the font size as desired */
   font-weight: 600;
   color: #000; /* Adjust the text color as desired */
-  font-family: 'SF Pro Text', sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin-bottom: 16px; /* Adjust the margin as desired */
 }
 
@@ -41,5 +41,5 @@ p {
   font-size: 24px; /* Adjust the font size as desired */
   font-weight: 400;
   color: #000; /* Adjust the text color as desired */
-  font-family: 'SF Pro Text', sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
