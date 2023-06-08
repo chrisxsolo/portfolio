@@ -3,9 +3,11 @@ import './Navbar.css';
 
 const Navbar = () => {
   useEffect(() => {
+    // Function to handle scroll event
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
 
+      // Add 'scrolled' class to navbar when scrolled
       if (window.scrollY > 0) {
         navbar.classList.add('scrolled');
       } else {
@@ -13,8 +15,10 @@ const Navbar = () => {
       }
     };
 
+    // Attach scroll event listener when component mounts
     window.addEventListener('scroll', handleScroll);
 
+    // Clean up the event listener when component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

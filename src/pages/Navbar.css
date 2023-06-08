@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
+/* Styling for the navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -17,36 +18,45 @@
   transition: height 0.3s ease;
 }
 
+/* Styling for the navbar when scrolled */
 .navbar.scrolled {
   height: 30px; /* Adjust the height as desired */
 }
 
+/* Styling for the logo */
 .logo {
   color: #c0c0c0;
   font-weight: bold;
   font-size: 16px;
+  margin-left: 6%;
+
 }
 
+/* Styling for the navigation links */
 .nav-links {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
+  margin-right: 6%;
 }
 
+/* Styling for the list items */
 .nav-links li {
   margin-left: 15px;
 }
 
+/* Styling for the first list item */
 .nav-links li:first-child {
   margin-left: 0;
 }
 
+/* Styling for the links */
 .nav-links a {
   color: #c0c0c0;
   text-decoration: none;
 }
 
+/* Styling for the links on hover */
 .nav-links a:hover {
   color: #999;
 }
