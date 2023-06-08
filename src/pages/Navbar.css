@@ -29,7 +29,6 @@
   font-weight: bold;
   font-size: 16px;
   margin-left: 6%;
-
 }
 
 /* Styling for the navigation links */
@@ -59,4 +58,20 @@
 /* Styling for the links on hover */
 .nav-links a:hover {
   color: #999;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+    height: 60px; /* Adjust the height as desired */
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    margin-right: 10px;
+  }
 }

@@ -17,3 +17,29 @@ body,
   padding-left: 2%;
   box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;600&display=swap');
+
+.landing-page {
+  height: 100vh; /* Adjust the height as desired */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2; /* Adjust the background color as desired */
+}
+
+h1 {
+  font-size: 48px; /* Adjust the font size as desired */
+  font-weight: 600;
+  color: #000; /* Adjust the text color as desired */
+  font-family: 'SF Pro Text', sans-serif;
+  margin-bottom: 16px; /* Adjust the margin as desired */
+}
+
+p {
+  font-size: 24px; /* Adjust the font size as desired */
+  font-weight: 400;
+  color: #000; /* Adjust the text color as desired */
+  font-family: 'SF Pro Text', sans-serif;
+}

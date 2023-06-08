@@ -2,9 +2,10 @@ const Home = () => {
    
 
     return (
-      <div className="home">
-       <h1>Hello!</h1>
-      </div>
+      <div className="landing-page">
+      <h1>Hi, my name is Chris</h1>
+      <p>A Developer</p>
+    </div>
     );
   }
    
