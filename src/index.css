@@ -39,7 +39,7 @@ body,
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust as needed */
-  background-color: azure;
+  background-color: rgb(247, 254, 254);
 }
 
 /* Styles for the text container */

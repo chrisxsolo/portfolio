@@ -21,16 +21,13 @@ const Home = () => {
 
     // Apply styling and animation to the image
     image.style.borderRadius = '50%';
-    image.style.width = '150px';
-    image.style.height = '150px';
-    image.style.transition = 'all 0.5s ease';
+    image.style.width = '300px';
+    image.style.height = '300px';
   };
 
   const handleImageClick = () => {
     const image = imageRef.current;
 
-    // Apply animation on image click
-    image.style.transform = 'rotate(360deg)';
   };
 
   return (
