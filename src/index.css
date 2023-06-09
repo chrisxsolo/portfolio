@@ -8,8 +8,6 @@
 
 html,
 body,
-#root,
-.app,
 .content {
   height: 100%;
   width: 100%;
@@ -20,19 +18,27 @@ body,
 /* Setting styles for the content container */
 
 .content {
-  margin-top: 6%;
-  padding: 0 2%;
-  box-sizing: border-box;
+    flex: 1;
 }
+#root {
+    min-height: 100%;
+  }
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 
 /* Styles for the landing page container */
 
 .landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    background-color: azure;
+
 }
 
 /* Styles for the text container */
@@ -74,7 +80,7 @@ body,
 .image {
   max-width: 100%;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   transition: all 0.5s ease;
 }
