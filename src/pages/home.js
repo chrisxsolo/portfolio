@@ -37,7 +37,7 @@ const Home = () => {
         <h1>Software Developer 👋</h1>
         <p id = "title">Hi, I'm Chris Solorzano. Recent Computer Science graduate based in San Francisco. 📍</p>
         <div className="icon-container">
-          <FaLinkedin className="icon" onClick={() => window.open('https://www.linkedin.com/in/christopher-solorzano-9474851b0/', '_blank')} />
+          <FaLinkedin className="icon" onClick={() => window.open('www.linkedin.com/in/chrisxsolo', '_blank')} />
           <FaGithub className="icon" onClick={() => window.open('https://github.com/chrisxsolo', '_blank')} />
         </div>
       </div>

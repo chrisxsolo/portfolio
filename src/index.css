@@ -20,7 +20,6 @@ body,
 /* Setting styles for the content container */
 
 .content {
-
   box-sizing: border-box;
 }
 
@@ -39,6 +38,8 @@ body,
 .text-container {
     text-align: center;
     margin-bottom: 20px; /* Adjust the margin-bottom value as desired */
+    padding: 0 10px; /* Add padding to the left and right sides */
+
   }
   
   /* Styles for the image container */
@@ -50,7 +51,6 @@ body,
   }
 
 /* Styles for the icons container */
-
 .icon-container {
   display: flex;
   justify-content: center;
@@ -60,7 +60,6 @@ body,
 }
 
 /* Styles for the icons */
-
 .icon {
   font-size: 40px;
   color: black;
@@ -76,6 +75,7 @@ body,
      /* Styles for mobile view */
   .text-container {
     margin-bottom: 10%; /* Adjust the margin-bottom value for mobile view */
+    padding: 0 20px; /* Increase the padding for mobile view if needed */
   }
 
   .image-container {
@@ -88,7 +88,9 @@ body,
       flex-basis: 50%;
     }
   
+
     .image-container {
+        margin-top: 20%;
       justify-content: flex-start; /* Change justify-content to flex-start */
       order: -1; /* Change the order to move the image container to the top */
     }
@@ -101,6 +103,28 @@ body,
       flex-direction: row; /* Change the direction to display the icons side by side */
       justify-content: center; /* Align icons to the center */
       margin-top: 20px;
+    }
+  }
+
+  /* Styles for the image */
+
+.image {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 300px; /* Adjust the width to make the circle bigger */
+    height: 300px; /* Adjust the height to make the circle bigger */
+    animation: shapeChange 4s infinite linear alternate;
+  }
+  
+  @keyframes shapeChange {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
     }
   }
   
