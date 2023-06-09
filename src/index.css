@@ -62,7 +62,11 @@ body,
 
 @media (max-width: 700px) {
   .content {
-    margin-top: 15%;
+    margin-top: 10%;
+  }
+
+  #title{
+    margin-top:20%
   }
 
   .text-container,

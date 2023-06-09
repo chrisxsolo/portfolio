@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div className="landing-page">
       <div className="text-container">
-        <h1>Software Developer 👋</h1>
+        <h1 id="title"> Software Developer 👋</h1>
         <p>Hi, I'm Chris Solorzano. Recent Computer Science graduate based in San Francisco. 📍</p>
         <div className="icon-container">
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
