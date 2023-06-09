@@ -8,6 +8,8 @@
 
 html,
 body,
+#root,
+.app,
 .content {
   height: 100%;
   width: 100%;
@@ -18,17 +20,9 @@ body,
 /* Setting styles for the content container */
 
 .content {
-  flex: 1;
-}
-
-#root {
-  min-height: 100%;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  margin-top: 6%;
+  padding: 0 2%;
+  box-sizing: border-box;
 }
 
 /* Styles for the landing page container */
@@ -39,13 +33,12 @@ body,
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust as needed */
-  background-color: rgb(247, 254, 254);
+  background-color: azure;
 }
 
 /* Styles for the text container */
 
 .text-container {
-  margin-top: 10%;
   text-align: center;
 }
 
@@ -55,7 +48,25 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100%; /* Adjust the margin-bottom to bring the image closer to the text */
+  margin-bottom: 20px;
+}
+
+/* Styles for the icons container */
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Styles for the icons */
+
+.icon {
+  font-size: 40px;
+  color: black;
+  margin: 10px;
 }
 
 /* Media query for larger screens (min-width: 768px) */
@@ -63,10 +74,6 @@ body,
 @media (max-width: 700px) {
   .content {
     margin-top: 10%;
-  }
-
-  #title{
-    margin-top:20%
   }
 
   .text-container,
@@ -77,26 +84,32 @@ body,
   .image-container {
     justify-content: flex-end;
   }
+
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Styles for the image */
 
 .image {
-  max-width: 100%;
-  border-radius: 50%;
-  width: 300px; /* Adjust the width to make the circle bigger */
-  height: 300px; /* Adjust the height to make the circle bigger */
-  animation: shapeChange 4s infinite linear alternate;
-}
-
-@keyframes shapeChange {
-  0% {
-    transform: scale(1);
+    margin-top: 10%;
+    max-width: 100%;
+    border-radius: 50%;
+    width: 300px; /* Adjust the width to make the circle bigger */
+    height: 300px; /* Adjust the height to make the circle bigger */
+    animation: shapeChange 4s infinite linear alternate;
   }
-  50% {
-    transform: scale(0.8);
+  
+  @keyframes shapeChange {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
