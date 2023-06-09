@@ -14,7 +14,7 @@ body,
 }
 
 .content {
-  margin-top: 8%;
+  margin-top: 6%; /* Adjust the margin-top to move the content closer to the navbar */
   padding: 0 2%; /* Update padding to include left and right */
   box-sizing: border-box;
 }
@@ -22,10 +22,24 @@ body,
 .landing-page {
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse; /* Change flex-direction to row-reverse */
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
+}
+
+.image-container {
+  flex: 1; /* Take up 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  flex: 1; /* Take up 50% of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -45,3 +59,7 @@ p {
   text-align: center; /* Center the text */
 }
 
+.image {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  margin-top: 10px; /* Adjust the margin-top as desired */
+}
