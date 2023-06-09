@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import imageSrc from '../components/chris.JPG';
 
 const Home = () => {
@@ -32,20 +33,16 @@ const Home = () => {
 
   return (
     <div className="landing-page">
-      <div className="image-container">
-        <img ref={imageRef} className="image" src={imageSrc} alt="Image" onClick={handleImageClick} />
-      </div>
       <div className="text-container">
         <h1>Software Developer 👋</h1>
-        <p>Hi, I'm Chris Solorzano. Recent Computer Science graduate based in San Francisco. 📍</p>
+        <p id = "title">Hi, I'm Chris Solorzano. Recent Computer Science graduate based in San Francisco. 📍</p>
+        <div className="icon-container">
+          <FaLinkedin className="icon" onClick={() => window.open('https://www.linkedin.com/in/christopher-solorzano-9474851b0/', '_blank')} />
+          <FaGithub className="icon" onClick={() => window.open('https://github.com/chrisxsolo', '_blank')} />
+        </div>
       </div>
-      <div className="icon-container">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <i className="icon fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-          <i className="icon fab fa-github"></i>
-        </a>
+      <div className="image-container">
+        <img ref={imageRef} className="image" src={imageSrc} alt="Image" onClick={handleImageClick} />
       </div>
     </div>
   );
