@@ -20,9 +20,9 @@ const Home = () => {
     const image = imageRef.current;
 
     // Apply styling and animation to the image
-    image.style.borderRadius = '100%';
-    image.style.width = '65%';
-    image.style.height = '65%';
+    image.style.borderRadius = '50%';
+    image.style.width = '150px';
+    image.style.height = '150px';
     image.style.transition = 'all 0.5s ease';
   };
 

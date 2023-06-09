@@ -14,52 +14,50 @@ body,
 }
 
 .content {
-  margin-top: 6%; /* Adjust the margin-top to move the content closer to the navbar */
-  padding: 0 2%; /* Update padding to include left and right */
+  margin-top: 6%;
+  padding: 0 2%;
   box-sizing: border-box;
 }
 
 .landing-page {
-  height: 100vh;
   display: flex;
-  flex-direction: row-reverse; /* Change flex-direction to row-reverse */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
 }
 
+.text-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .image-container {
-  flex: 1; /* Take up 50% of the width */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-.text-container {
-  flex: 1; /* Take up 50% of the width */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@media (min-width: 768px) {
+  .landing-page {
+    flex-direction: row;
+  }
 
-h1 {
-  font-size: 32px; /* Adjust the font size for mobile */
-  font-weight: 600;
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 8px; /* Adjust the margin for mobile */
-  text-align: center; /* Center the text */
-}
+  .text-container,
+  .image-container {
+    flex-basis: 50%;
+  }
 
-p {
-  font-size: 18px; /* Adjust the font size for mobile */
-  font-weight: 400;
-  color: #000;
-  font-family: 'Mulish', sans-serif;
-  text-align: center; /* Center the text */
+  .image-container {
+    justify-content: flex-end;
+  }
 }
 
 .image {
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  margin-top: 10px; /* Adjust the margin-top as desired */
+  max-width: 100%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s ease;
 }
