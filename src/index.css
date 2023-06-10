@@ -105,7 +105,7 @@ body {
  /* Media query for smaller screens (max-width: 767px) */
 @media (max-width: 767px) {
   .landing-page {
-    padding-top: 64px; /* Account for the height of the navbar */
+    padding-top: 3.5rem; /* Account for the height of the navbar */
     min-height: calc(100vh - 64px); /* Adjust min-height to account for navbar height */
   }
    .image-container {
@@ -125,36 +125,50 @@ body {
    .icon {
     font-size: 35px;
   }
-   .tech-stack-container {
-    text-align: center;
-  }
-   .tech-stack-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-   .tech-icon {
-    font-size: 2rem;
-    margin: 1rem;
-  }
+
+    .tech-stack-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .tech-stack-wording {
+      margin-bottom: 1rem;
+      position: static;
+      text-align: center;
+    }
+    .tech-stack-line {
+      width: 80%;
+      height: 1px;
+      background-color: #000000;
+      margin: 1rem auto;
+    }
+    .tech-icon {
+      margin: 0.5rem auto;
+      display: block;
+    }
+  
+  
    body {
     overflow-x: hidden;
   }
    .section {
     flex-wrap: wrap;
   }
-}
- /* Media query for smaller screens (max-width: 700px) */
-@media (max-width: 700px) {
+
+  body {
+    overflow-y: scroll;
+  }
+
   .image-container {
     display: flex;
     justify-content: center;
   }
+
+
+
+
 }
- html, body {
-  overflow-x: hidden;
-}
+ /* Media query for smaller screens (max-width: 700px) */
+
  /* Styles for the image */
 @keyframes shapeChange {
   0% {
