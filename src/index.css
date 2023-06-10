@@ -123,13 +123,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 65%; /* adjust the value as needed */
+    margin-top: 60%; /* adjust the value as needed */
     margin-left: 5rem;
     margin-right: 5rem;
   }
-h2{
-  
-}
+
   h1{
     font-size: 26px;
     font-weight: 800;
