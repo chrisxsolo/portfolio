@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaPython, FaLinkedin, FaGithub } from 'react-icons/fa';
- const Home = () => {
+
+const Home = () => {
   return (
     <section className="landing-page">
       <div className="image-text-container">
@@ -32,7 +33,18 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaPython, FaLinkedin, FaGithub 
           <FaPython className="tech-icon" />
         </div>
       </div>
+      <div className="about-container">
+        <div className="image-box">
+          {/* Add your image here */}
+        </div>
+        <div className="text-box">
+          <h2 className="about-title">About Me</h2>
+          <h3 className="about-subtitle">Subtitle</h3>
+          <p className="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis, dolor eu hendrerit placerat, dolor tortor facilisis quam, sed pulvinar velit risus sed turpis. Morbi lacinia euismod lectus, ac consectetur libero mollis sit amet.</p>
+        </div>
+      </div>
     </section>
   );
 };
- export default Home;
+
+export default Home;

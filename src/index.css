@@ -96,24 +96,24 @@ body {
   margin-top: 1rem;
 }
  .tech-stack-wording {
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1.1rem;
+  font-weight: 350;
   font-family: 'Mulish', sans-serif;
-  margin-right: 2%;
+  margin-right: 9%;
   white-space: nowrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 0rem;
 }
+
  .tech-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0.5rem;
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
   position: relative;
+  
 }
  /* Media queries */
 @media (max-width: 767px) {
@@ -167,6 +167,47 @@ body {
   }
 
 }
+
+/* CSS for About Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.image-box {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-box {
+  flex: 2;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.about-paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 
  /* Styles for the image */
  @keyframes shapeChange {
