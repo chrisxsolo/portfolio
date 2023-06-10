@@ -29,6 +29,12 @@ const Navbar = () => {
     modal.classList.add('slide');
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: 'smooth' });
+    toggleModal(); // Close the modal after clicking on a section
+  };
+
   return (
     <nav id="navbar" className="navbar">
       <div className="logo">Chris.dev</div>
@@ -39,10 +45,10 @@ const Navbar = () => {
       </div>
       <div id="nav-modal" className={`nav-modal ${isModalOpen ? 'open' : ''}`}>
         <ul className="nav-links">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#projects" onClick={() => scrollToSection('about')}>About Me</a></li>
+          <li><a href="#about" onClick={() => scrollToSection('projects')}>projects</a></li>
+          <li><a href="#resume" onClick={() => scrollToSection('resume')}>Resume</a></li>
+          <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
         </ul>
       </div>
     </nav>

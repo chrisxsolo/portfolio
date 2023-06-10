@@ -1,51 +1,37 @@
-import React, { useEffect, useRef } from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import imageSrc from '../components/chris.JPG';
-
-const Home = () => {
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    const image = imageRef.current;
-
-    // Add event listener to apply animation on image load
-    image.addEventListener('load', handleImageLoad);
-
-    // Cleanup function to remove event listener
-    return () => {
-      image.removeEventListener('load', handleImageLoad);
-    };
-  }, []);
-
-  const handleImageLoad = () => {
-    const image = imageRef.current;
-
-    // Apply styling and animation to the image
-    image.style.borderRadius = '50%';
-    image.style.width = '300px';
-    image.style.height = '300px';
-  };
-
-  const handleImageClick = () => {
-    const image = imageRef.current;
-
-  };
-
+import React from 'react';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaPython, FaLinkedin, FaGithub } from 'react-icons/fa';
+ const Home = () => {
   return (
-    <div className="landing-page">
-      <div className="text-container">
-        <h1>Software Developer 👋</h1>
-        <p id = "title">Hi, I'm Chris Solorzano. Recent Computer Science graduate based in San Francisco. 📍</p>
-        <div className="icon-container">
-          <FaLinkedin className="icon" onClick={() => window.open('www.linkedin.com/in/chrisxsolo', '_blank')} />
-          <FaGithub className="icon" onClick={() => window.open('https://github.com/chrisxsolo', '_blank')} />
+    <section className="landing-page">
+      <div className="image-text-container">
+        <div className="image-container">
+          <img src={process.env.PUBLIC_URL + '/chris.JPG'} alt="Profile Image" className="image" />
+        </div>
+        <div className="text-container">
+          <h1>Software Developer 👋</h1>
+          <p id="title">Hi, I'm Chris Solorzano. A passionate computer science graduate based in San Francisco, California 📍</p>
+          <div className="icon-container">
+            <a href="https://www.linkedin.com/in/chris-solorzano/">
+              <FaLinkedin className="icon" />
+            </a>
+            <a href="https://github.com/">
+              <FaGithub className="icon" />
+            </a>
+          </div>
         </div>
       </div>
-      <div className="image-container">
-        <img ref={imageRef} className="image" src={imageSrc} alt="Image" onClick={handleImageClick} />
+      <div className="tech-stack-container">
+        <h2 className="tech-stack-wording">Tech Stack |</h2>
+        <div className="tech-stack-icons">
+          <FaHtml5 className="tech-icon" />
+          <FaCss3 className="tech-icon" />
+          <FaJs className="tech-icon" />
+          <FaReact className="tech-icon" />
+          <FaJava className="tech-icon" />
+          <FaPython className="tech-icon" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
-
-export default Home;
+ export default Home;

@@ -1,130 +1,172 @@
 /* Importing Google Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap');
-
-/* Setting default styles for HTML, body, and root container */
-
-html,
-body,
-#root,
-.app,
-.content {
-  height: 100%;
-  width: 100%;
-  font-family: 'Mulish', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+ /* Global styles */
+body {
   margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Text', Arial, sans-serif;
 }
-
-/* Setting styles for the content container */
-
-.content {
-  box-sizing: border-box;
+ .section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-/* Styles for the landing page container */
-
+ /* Landing page styles */
 .landing-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust as needed */
-  background-color: rgb(241, 254, 254);
+  justify-content: center;
+  height: 100vh;
 }
-
-/* Styles for the text container */
-.text-container {
-    text-align: center;
-    margin-bottom: 20px; /* Adjust the margin-bottom value as desired */
-    padding: 0 10px; /* Add padding to the left and right sides */
-
-  }
-  
-  /* Styles for the image container */
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
-  }
-
-/* Styles for the icons container */
-.icon-container {
+ .image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+ .image-container {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+ .image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: shapeChange 4s infinite linear alternate;
+}
+ .text-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+ h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+ #title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+ .icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
-
-/* Styles for the icons */
-.icon {
-  font-size: 40px;
-  color: black;
-  margin: 10px;
-  filter: grayscale(100%); /* Convert icons to black and white */
+ .icon {
+  font-size: 2rem;
+  color: #000000;
+  margin: 0 1rem;
 }
-/* Media query for larger screens (min-width: 768px) */
-
+ .icon:hover {
+  color: #ffffff;
+}
+ /* Tech stack styles */
+.tech-stack-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+ .tech-stack-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+ .tech-stack-wording {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 2%;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+ .tech-icon {
+  font-size: 3rem;
+  margin: 0.5rem;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+}
+ /* Media query for smaller screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .landing-page {
+    padding-top: 64px; /* Account for the height of the navbar */
+    min-height: calc(100vh - 64px); /* Adjust min-height to account for navbar height */
+  }
+   .image-container {
+    display: flex;
+    justify-content: center;
+  }
+   .text-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+   .icon-container {
+    flex-wrap: wrap;
+  }
+   .icon {
+    font-size: 50px;
+    margin: 15px;
+  }
+   .tech-stack-container {
+    margin-top: 2rem;
+    text-align: center;
+  }
+   .tech-stack-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+   .tech-icon {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+   body {
+    overflow-x: hidden;
+  }
+   .section {
+    flex-wrap: wrap;
+  }
+}
+ /* Media query for smaller screens (max-width: 700px) */
 @media (max-width: 700px) {
-    .content {
-      margin-top: 10%;
-    }
-     /* Styles for mobile view */
-  .text-container {
-    margin-bottom: 10%; /* Adjust the margin-bottom value for mobile view */
-    padding: 0 20px; /* Increase the padding for mobile view if needed */
-  }
-
   .image-container {
-    margin-bottom: 1%; /* Adjust the margin-bottom value for mobile view */
+    display: flex;
+    justify-content: center;
   }
-
-  
-    .text-container,
-    .image-container {
-      flex-basis: 50%;
-    }
-  
-
-    .image-container {
-        margin-top: 20%;
-      justify-content: flex-start; /* Change justify-content to flex-start */
-      order: -1; /* Change the order to move the image container to the top */
-    }
-  
-    .text-container {
-      order: 2; /* Change the order to move the text container to the bottom */
-    }
-  
-    .icon-container {
-      flex-direction: row; /* Change the direction to display the icons side by side */
-      justify-content: center; /* Align icons to the center */
-      margin-top: 20px;
-    }
+}
+ html, body {
+  overflow-x: hidden;
+}
+ /* Styles for the image */
+@keyframes shapeChange {
+  0% {
+    transform: scale(1);
   }
-
-  /* Styles for the image */
-
-.image {
-    max-width: 100%;
-    border-radius: 50%;
-    width: 300px; /* Adjust the width to make the circle bigger */
-    height: 300px; /* Adjust the height to make the circle bigger */
-    animation: shapeChange 4s infinite linear alternate;
+   50% {
+    transform: scale(0.8);
   }
-  
-  @keyframes shapeChange {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(0.8);
-    }
-    100% {
-      transform: scale(1);
-    }
+   100% {
+    transform: scale(1);
   }
-  
+}

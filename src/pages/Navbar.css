@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap');
 
-
 /* Styling for the navbar */
 .navbar {
   position: fixed;
@@ -20,12 +19,13 @@
   height: 60px;
   transition: height 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
- }
+}
 
 /* Styling for the navbar when scrolled */
 .navbar.scrolled {
   height: 30px; /* Adjust the height as desired */
 }
+
 
 /* Styling for the logo */
 .logo {
