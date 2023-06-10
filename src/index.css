@@ -20,7 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin-top: 64px; /* adjust the value as needed */
+  margin-top: 150px; /* adjust the value as needed */
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -117,9 +117,20 @@ body {
 }
  /* Media queries */
 @media (max-width: 767px) {
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 75%; /* adjust the value as needed */
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 
   h1{
-    font-size: 2.5rem;
+    font-size: 26px;
+    font-weight: 800;
   }
 
   #title{
