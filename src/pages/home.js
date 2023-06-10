@@ -21,7 +21,8 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaPython, FaLinkedin, FaGithub 
         </div>
       </div>
       <div className="tech-stack-container">
-        <h2 className="tech-stack-wording">Tech Stack |</h2>
+        <h2 className="tech-stack-wording">Tech Stack</h2>
+        <div className="tech-stack-line"></div>
         <div className="tech-stack-icons">
           <FaHtml5 className="tech-icon" />
           <FaCss3 className="tech-icon" />
