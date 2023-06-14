@@ -23,7 +23,7 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 2rem;
-  padding-top: 60%; /* Add this line */
+  padding-top: 45%; /* Add this line */
 }
 
 .image-text-container {
