@@ -23,7 +23,7 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 2rem;
-  padding-top: 25%; /* Add this line */
+  padding-top: 60%; /* Add this line */
 }
 
 .image-text-container {
@@ -125,7 +125,7 @@ h1 {
 @media (max-width: 767px) {
 
   .landing-page {
-    padding-top: 100%;
+    padding-top: 215%;
   }
 
   .image-container {
