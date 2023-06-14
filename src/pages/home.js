@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaPython, FaLinkedin, FaGithub } from 'react-icons/fa';
+import './Home.css';
 
 const Home = () => {
   return (
-    <section className="landing-page">
+    <section id="home" className="landing-page">
       <div className="image-text-container">
         <div className="image-container">
           <img src={process.env.PUBLIC_URL + '/chris.JPG'} alt="Profile Image" className="image" />
@@ -35,7 +36,7 @@ const Home = () => {
       </div>
       <div className="about-container">
         <div className="image-box">
-        <img src={process.env.PUBLIC_URL + '/about.jpeg'} alt="About Image" className="about-image" />
+          <img src={process.env.PUBLIC_URL + '/about.jpeg'} alt="About Image" className="about-image" />
         </div>
         <div className="text-box">
           <h2 className="about-title">About Me</h2>

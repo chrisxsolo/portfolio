@@ -1,203 +1,179 @@
-/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap');
- /* Global styles */
+
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Mulish', sans-serif;
 }
- .section {
+
+.section {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
- .landing-page {
+
+.landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin-top: 150px; /* adjust the value as needed */
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
- .image-text-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
- .image-container {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  order: 1;
+  padding: 2rem;
+  padding-top: 25%; /* Add this line */
 }
 
- .image {
-  max-width: 100%;
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: shapeChange 4s infinite linear alternate;
- }
- .text-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  order: 2;
-  font-family: 'Mulish', sans-serif;
-}
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6%;
 }
 
- h1 {
-  font-size: 3rem;
+.text-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
 }
- #title {
-  font-size: 1.5rem;
-  font-weight: 200;
+
+#title {
+  font-size: 1.2rem;
+  font-weight: 400;
   font-family: 'Mulish', sans-serif;
-
-
-
 }
- .icon-container {
+
+.icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
 }
- .icon {
+
+.icon {
   font-size: 2rem;
   margin: 0 1rem;
 }
- .icon:hover {
+
+.icon:hover {
   color: #ffffff;
 }
- /* Tech stack styles */
+
 .tech-stack-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
 }
- .tech-stack-icons {
+
+.tech-stack-wording {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack-line {
+  width: 40px;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 1rem;
+}
+
+.tech-stack-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-}
- .tech-stack-wording {
-  font-size: 1.1rem;
-  font-weight: 350;
-  font-family: 'Mulish', sans-serif;
-  margin-right: 9%;
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0rem;
+  flex-wrap: wrap;
 }
 
- .tech-icon {
+.tech-icon {
   font-size: 2.5rem;
   margin: 0.5rem;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
   position: relative;
-  
 }
- /* Media queries */
+
 @media (max-width: 767px) {
+
   .landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin-top: 60%; /* adjust the value as needed */
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding-top: 100%;
   }
 
-  h1{
-    font-size: 26px;
-    font-weight: 800;
+  .image-container {
+    width: 150px;
+    height: 150px;
   }
 
-  #title{
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #title {
     font-size: 1rem;
   }
 
   .tech-stack-container {
-    flex-direction: column;
-    text-align: center;
-  }
-   .tech-stack-wording {
-    margin-right: 0;
     margin-bottom: 1rem;
-    position: static;
-    text-align: center;
   }
-   .tech-icon {
-    margin: 0.5rem auto;
-    display: block;
+
+  .tech-stack-wording {
+    margin-bottom: 0.25rem;
   }
-   .image-text-container {
-    flex-direction: column;
-    align-items: center;
+
+  .tech-stack-line {
+    width: 30px;
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-stack-icons {
     justify-content: center;
-    margin-bottom: 2rem;
   }
-   .image-container {
-    order: 2;
-    margin-bottom: 1rem;
-    margin-top: 10rem;
+  
+  .image-text-container {
+    margin-top: 2rem;
   }
-   .text-container {
-    order: 2;
+  
+  .about-container {
+    margin-top: 2rem;
   }
-
-  body {
-    overflow-x: hidden;
-  }
-   .section {
-    flex-wrap: wrap;
-  }
-
-  body {
-    overflow-y: scroll;
-  }
-
 }
 
 /* CSS for About Section */
 .about-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 2rem 0;
-  margin-top: 10%;
-}
-
-.image-box {
-  flex: 1;
-  padding-right: 2rem;
 }
 
 .about-image {
@@ -206,40 +182,36 @@ body {
   height: auto;
 }
 
-.text-box {
-  flex: 2;
-}
-
 .about-title {
-  font-size: 1.2rem;
-  font-weight: 5050;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
-  color: #00aeff
+  color: #00aeff;
 }
 
 .about-subtitle {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 1.5rem;
 }
 
 .about-paragraph {
   font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Mulish', sans-serif;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
 }
 
-
- /* Styles for the image */
- @keyframes shapeChange {
+@keyframes shapeChange {
   0% {
-    transform: scale(1);
+    border-radius: 50%;
   }
-   50% {
-    transform: scale(0.8);
+  50% {
+    border-radius: 10%;
   }
-   100% {
-    transform: scale(1);
+  100% {
+    border-radius: 50%;
   }
 }
