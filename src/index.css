@@ -173,8 +173,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center; /* Add this line */
   margin: 2rem 0;
 }
+
 
 .about-image {
   width: 100%;
@@ -192,7 +194,7 @@ h1 {
 
 .about-subtitle {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   font-family: 'Mulish', sans-serif;
   margin-bottom: 1.5rem;
 }
@@ -200,7 +202,7 @@ h1 {
 .about-paragraph {
   font-size: 1rem;
   font-weight: 400;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
 }
 
