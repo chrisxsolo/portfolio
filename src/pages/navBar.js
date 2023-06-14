@@ -31,8 +31,13 @@ const Navbar = () => {
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: 'smooth' });
-    toggleModal(); // Close the modal after clicking on a section
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth',
+      });
+      toggleModal(); // Close the modal after clicking on a section
+    }
   };
 
   return (
@@ -47,7 +52,7 @@ const Navbar = () => {
         <ul className="nav-links">
           <li><a href="#home" onClick={() => scrollToSection('home')}>Home</a></li>
           <li><a href="#about" onClick={() => scrollToSection('about')}>About Me</a></li>
-          <li><a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a></li>
+          <li><a href="#portfolio" onClick={() => scrollToSection('portfolio')}>Projects</a></li>
           <li><a href="#resume" onClick={() => scrollToSection('resume')}>Resume</a></li>
           <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
         </ul>
