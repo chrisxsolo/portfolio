@@ -44,6 +44,51 @@ const Home = () => {
           <p className="about-paragraph">As an accomplished computer science graduate, I possess a diverse skill set in both front-end and back-end development. My expertise includes proficiency in HTML, CSS, JavaScript, React, Java, C++, MongoDB, and more. With a passion for designing visually appealing websites, my focus lies in creating and maintaining responsive platforms that offer seamless user experiences. Beyond my technical abilities, I am a highly collaborative team player, thriving in environments that encourage cross-functional cooperation. By combining my technical acumen with my strong interpersonal skills, I am committed to delivering exceptional results and contributing to the success of any project.</p>
         </div>
       </div>
+      <section id="portfolio" class="section">
+  <div class="portfolio-container">
+    <div class="portfolio-title">
+      <h2>Portfolio</h2>
+      <p>Check out some of my projects</p>
+    </div>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Project 1</h3>
+        <div class="project-buttons">
+          <button>React</button>
+          <button>CSS</button>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/project1" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://project1demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <div class="project-buttons">
+          <button>React</button>
+          <button>HTML</button>
+          <button>CSS</button>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/project2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://project2demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <div class="project-buttons">
+          <button>Vue</button>
+          <button>SCSS</button>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/project3" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://project3demo.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </section>
   );
 };
