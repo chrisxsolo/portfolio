@@ -42,7 +42,7 @@ const Home = () => {
     <h2 className="about-title">About Me</h2>
     <h3 className="about-subtitle">A dedicated and passionate computer science graduate based in San Francisco, California 📍</h3>
     <p className="about-paragraph">As an accomplished computer science graduate, I possess a diverse skill set in both front-end and back-end development. My expertise includes proficiency in HTML, CSS, JavaScript, React, Java, C++, MongoDB, and more. With a passion for designing visually appealing websites, my focus lies in creating and maintaining responsive platforms that offer seamless user experiences. Beyond my technical abilities, I am a highly collaborative team player, thriving in environments that encourage cross-functional cooperation. By combining my technical acumen with my strong interpersonal skills, I am committed to delivering exceptional results and contributing to the success of any project.</p>
-  </div>
+  </div> 
 </div>
       <section id="portfolio" class="section">
   <div class="portfolio-container">
