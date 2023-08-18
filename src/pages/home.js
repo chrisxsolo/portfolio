@@ -44,7 +44,7 @@ const Home = () => {
     <p className="about-paragraph">As an accomplished computer science graduate, I possess a diverse skill set in both front-end and back-end development. My expertise includes proficiency in HTML, CSS, JavaScript, React, Java, C++, MongoDB, and more. With a passion for designing visually appealing websites, my focus lies in creating and maintaining responsive platforms that offer seamless user experiences. Beyond my technical abilities, I am a highly collaborative team player, thriving in environments that encourage cross-functional cooperation. By combining my technical acumen with my strong interpersonal skills, I am committed to delivering exceptional results and contributing to the success of any project.</p>
   </div> 
 </div>
-      <section id="portfolio" class="section">
+  <section id="portfolio" class="section">
   <div class="portfolio-container">
     <div class="portfolio-title">
       <h2>Portfolio</h2>
@@ -52,37 +52,45 @@ const Home = () => {
     </div>
     <div class="projects-container">
       <div class="project">
-        <h3>Project 1</h3>
-        <div class="project-buttons">
-          <button>React</button>
-          <button>CSS</button>
+        <h3>Expense Tracker</h3>
+        <div class="project-image">
+        <img src={process.env.PUBLIC_URL + '/expense.png'} alt="Expense Image" className="expense-image" />
         </div>
+        <div class="project-buttons">
+  <div class="button-row">
+    <button>React</button>
+    <button>Next.js</button>
+    <button>Prisma</button>
+  </div>
+  <div class="button-row">
+    <button>PostgresSQL</button>
+    <button>Javascript</button>
+  </div>
+</div>
         <div class="project-actions">
-          <a href="https://github.com/project1" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://project1demo.com" target="_blank">Live Demo</a>
+          <a href="https://github.com/chrisxsolo/expensetracker" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://expensetracker-kohl-gamma.vercel.app/" target="_blank">Live Demo</a>
         </div>
       </div>
       <div class="project">
-        <h3>Project 2</h3>
+        <h3>Photography Blog</h3>
+        <div class="project-image">
+        <img src={process.env.PUBLIC_URL + '/blog.png'} alt="Expense Image" className="blog-image" />
+        </div>
         <div class="project-buttons">
-          <button>React</button>
-          <button>HTML</button>
-          <button>CSS</button>
-        </div>
+  <div class="button-row">
+    <button>React</button>
+    <button>Next.js</button>
+    <button>Prisma</button>
+  </div>
+  <div class="button-row">
+    <button>PostgresSQL</button>
+    <button>Javascript</button>
+  </div>
+</div>
         <div class="project-actions">
-          <a href="https://github.com/project2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://project2demo.com" target="_blank">Live Demo</a>
-        </div>
-      </div>
-      <div class="project">
-        <h3>Project 3</h3>
-        <div class="project-buttons">
-          <button>Vue</button>
-          <button>SCSS</button>
-        </div>
-        <div class="project-actions">
-          <a href="https://github.com/project3" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://project3demo.com" target="_blank">Live Demo</a>
+          <a href="https://github.com/chrisxsolo/blog" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://blog-six-psi-28.vercel.app/" target="_blank">Live Demo</a>
         </div>
       </div>
     </div>
