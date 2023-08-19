@@ -53,6 +53,9 @@ const Home = () => {
     <div class="projects-container">
       <div class="project">
         <h3>Expense Tracker</h3>
+        <div className= "project-description">
+  <p>comprehensive full-stack application that efficiently captures user data to calculate monthly budgets. </p>
+</div>
         <div class="project-image">
         <img src={process.env.PUBLIC_URL + '/expense.png'} alt="Expense Image" className="expense-image" />
         </div>
@@ -67,13 +70,21 @@ const Home = () => {
     <button>Javascript</button>
   </div>
 </div>
-        <div class="project-actions">
-          <a href="https://github.com/chrisxsolo/expensetracker" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://expensetracker-kohl-gamma.vercel.app/" target="_blank">Live Demo</a>
-        </div>
+<div class="project-actions">
+  <a href="https://github.com/chrisxsolo/expensetracker" target="_blank" class="project-action-link">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  <a href="https://expensetracker-kohl-gamma.vercel.app/" target="_blank" class="project-action-link">
+    Live Demo
+  </a>
+</div>
+
       </div>
       <div class="project">
         <h3>Photography Blog</h3>
+        <div className= "project-description">
+  <p>A fullstack and dynamic website showcasing my thoughts about my freelance photography sessions. </p>
+</div>
         <div class="project-image">
         <img src={process.env.PUBLIC_URL + '/blog.png'} alt="Expense Image" className="blog-image" />
         </div>
@@ -88,10 +99,14 @@ const Home = () => {
     <button>Javascript</button>
   </div>
 </div>
-        <div class="project-actions">
-          <a href="https://github.com/chrisxsolo/blog" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://blog-six-psi-28.vercel.app/" target="_blank">Live Demo</a>
-        </div>
+<div class="project-actions">
+    <a href="https://github.com/chrisxsolo/blog" target="_blank" class="project-action-link">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://blog-six-psi-28.vercel.app/" target="_blank" class="project-action-link">
+      Live Demo
+    </a>
+  </div>
       </div>
     </div>
   </div>
