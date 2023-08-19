@@ -13,7 +13,7 @@
     justify-content: center;
     height: 100vh;
     padding: 2rem;
-    padding-top: 50rem; /* Add this line */
+    padding-top: 70rem; /* Add this line */
   }
   
   .image-text-container {
@@ -115,7 +115,7 @@
   @media (max-width: 767px) {
   
     .landing-page {
-      padding-top:55rem;
+      padding-top:94rem;
     }
   
     .image-container {
@@ -162,6 +162,16 @@
 
     #portfolio{
       margin-top: 4rem;
+    }
+
+
+    .contact-container{
+      margin-top: 30rem;
+    }
+
+    #contact{
+      margin-top: 25rem;
+
     }
   }
 
@@ -379,4 +389,78 @@
     font-style: normal;
     font-weight:200;
   }
+  /* Styling for the contact section */
+
+
+.contact-container {
+  width: 100%;
+  margin-top: 7rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.contact-title {
+  margin-bottom: 2rem;
+}
+
+.contact-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #00aeff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-title p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Mulish', sans-serif;
+  color: #777777;
+}
+
+.contact-form {
+
+ display: flex;
+  justify-content: center;
+   align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-row textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: #00aeff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: scale(1.1);
+  background-color: #008ad6;
+}

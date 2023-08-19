@@ -78,7 +78,6 @@ const Home = () => {
     Live Demo
   </a>
 </div>
-
       </div>
       <div class="project">
         <h3>Photography Blog</h3>
@@ -111,7 +110,28 @@ const Home = () => {
     </div>
   </div>
 </section>
-
+<section id="contact" class="section">
+  <div class="contact-container">
+    <div class="contact-title">
+      <h2>Contact Me</h2>
+      <p>Feel free to get in touch</p>
+    </div>
+    <div class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="Name" required />
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="form-row">
+        <textarea placeholder="Message" rows="5" required></textarea>
+      </div>
+      <div class="form-row">
+        <button class="submit-button">Submit Message</button>
+      </div>
+    </div>
+  </div>
+</section>
     </section>
   );
 };
