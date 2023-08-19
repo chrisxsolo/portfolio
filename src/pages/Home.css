@@ -159,8 +159,13 @@
     .portfolio-container {
       margin-top: 20rem;
     }
+
+    #portfolio{
+      margin-top: 4rem;
+    }
   }
-  
+
+ 
   /* CSS for About Section */
   .about-container {
     display: flex;
